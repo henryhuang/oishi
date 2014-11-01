@@ -2,8 +2,6 @@
 
 根据landscape-plus主题进行修改。
 
-主题还在调整中，欢迎[open issue](https://github.com/xiangming/landscape-plus/issues/new)来提建议，参与讨论。
-
 ## 演示
 
 你可以点击[这里](http://www.cnhalo.com/)，查看演示。
