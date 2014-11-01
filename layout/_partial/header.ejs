@@ -1,0 +1,65 @@
+<header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <div class="logo">
+        <img src="<%-config.root%>logo.png" alt="Profile Picture">
+      </div>
+      <div id="title"><%-config.title%></div>
+      <% if (config.subtitle) {%>
+        <div id="subtitle"><%- config.subtitle %></div>
+      <% } %>
+      <%- partial('_partial/social') %>
+    </div>
+  </div>
+  <div id="header-inner" class="">
+    <nav id="main-nav">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <!--
+        <% for (var i in theme.menu){ %>
+          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+        <% } %>
+      -->
+    </nav>
+    <nav id="title-nav" style="display:none">
+      <a href="<%- url_for() %>"><%= config.title %></a>
+      <span id="title-nav-socials">
+        <% for (var i in theme.social){
+        if (theme.social[i]){ %>
+          <a href="<%- theme.social[i] %>" class="<%= i %>" target="_blank">
+            <i class="fa fa-<%= i %>"></i>
+          </a>
+        <% } 
+        } %>
+       <% if (config.email) { %>
+          <a href="mailto:<%- config.email %>" class="email" target="_blank" title="Email Me">
+            <i class="fa fa-envelope"></i>
+          </a>
+       <% } %>
+     </span>
+    </nav>
+    <nav id="sub-nav">
+      <% if (theme.rss){ %>
+        <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="RSS Feed"></a>
+      <% } %>
+      <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+    </nav>
+    <div id="search-form-wrap">
+      <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+        <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="<%- __('search') %>">
+        <input type="submit" value="" class="search-form-submit">
+        <input name=tn type=hidden value="bds">
+        <input name=cl type=hidden value="3">
+        <input name=ct type=hidden value="2097152">
+        <input type="hidden" name="si" value="<%- config.url.replace(/^https?:\/\//, '') %>">
+      </form>
+    </div>
+  </div>
+  <div class="site-nav" style="display: none;">
+    <ul>
+    <% for (var i in theme.menu){ %>
+        <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+      <% } %>
+    </ul>
+  </div>
+</header>

@@ -1,0 +1,261 @@
+#header
+  height: banner-height
+  position: relative
+  border-bottom: 1px solid color-border
+  &:before, &:after
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    height: 40px
+  &:before
+    top: 0
+  &:after
+    bottom: 0
+
+#header-outer
+  height: 100%
+  position: relative
+
+#header-inner
+  background: none repeat scroll 0 0 #fff;
+  height: 50px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: opacity 0.25s ease 0s;
+  width: 100%;
+  z-index: 99999;
+
+#banner
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: #fff
+  // background: url(banner-url) center #000
+  background-size: cover
+  z-index: -1
+
+#header-title
+  text-align: center
+  height: logo-size
+  position: absolute
+  top: 35%
+  left: 0
+  margin-top: logo-size * -0.5
+
+  #title
+    color: #555
+  
+  .logo
+    img
+      border-radius: 50%;
+      box-shadow: 0 0 1px #fff;
+      height: 100px;
+      width: 100px;
+
+  a
+    color: #333;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+  .my-socials
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 auto;
+    li
+      float: left
+      margin: 5px
+      width: 30px
+      .github
+        background-color: #333
+      .weibo
+        background-color: #e20021
+      .email
+        background-color: #ffd700
+      a
+        border-radius: 30px;
+        color: #fff;
+        display: block;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        width: 30px;
+
+        &:hover
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          color: #fff;
+          
+      i
+        font-size: 18px
+        font-style: normal
+        line-height: 30px
+        margin: 0  
+
+$logo-text
+  text-decoration: none
+  color: #555
+  font-weight: 300
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
+
+#logo
+  @extend $logo-text
+  font-size: logo-size
+  line-height: logo-size
+  letter-spacing: 2px
+  background: #fff
+  padding: 5px 10px
+  border-radius: 5px
+
+#subtitle
+  @extend $logo-text
+  font-size: subtitle-size
+  line-height: subtitle-size
+  letter-spacing: 1px
+  color: #687E91
+
+#subtitle-wrap
+  margin-top: subtitle-size
+
+#main-nav
+  position: absolute;
+  top: 0;
+
+$nav-link
+  float: left
+  color: #000
+  opacity: 0.6
+  text-decoration: none
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2)
+  transition: opacity 0.2s
+  display: block
+  padding: 20px 15px
+  &:hover
+    opacity: 1
+
+.nav-icon
+  @extend $nav-link
+  font-family: font-icon
+  text-align: center
+  font-size: font-size
+  width: font-size
+  height: font-size
+  padding: 20px 15px
+  position: relative
+  cursor: pointer
+
+.main-nav-link
+  @extend $nav-link
+  font-weight: 300
+  letter-spacing: 1px
+  @media mq-mobile
+    display: none
+
+#main-nav-toggle
+  display: block
+  &:before
+    content: "\f0c9"
+
+#title-nav
+  top: 0
+  color: color-default
+  cursor: pointer
+  font-family: FontAwesome
+  font-size: 14px
+  height: 14px
+  padding: 20px 15px
+  text-align: center
+  a
+    color: #555
+    text-decoration: none
+    transition: color 0.3s ease 0s
+  #title-nav-socials
+    padding-left: 10px
+    a
+      margin: 10px
+
+#sub-nav
+  position: absolute
+  right: 0
+  top: 0
+
+#nav-rss-link
+  &:before
+    content: "\f09e"
+
+#nav-search-btn
+  &:before
+    content: "\f002"
+
+#search-form-wrap
+  position: absolute
+  top: 15px
+  width: 150px
+  height: 30px
+  right: -150px
+  opacity: 0
+  transition: 0.2s ease-out
+  &.on
+    opacity: 1
+    right: 1%
+  @media mq-mobile
+    width: 100%
+    right: -100%
+
+.search-form
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  background: #fff
+  padding: 5px 15px
+  border-radius: 15px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+.search-form-input
+  border: none
+  background: none
+  color: color-default
+  width: 100%
+  font: 13px font-sans
+  outline: none
+  &::-webkit-search-results-decoration
+  &::-webkit-search-cancel-button
+    -webkit-appearance: none
+
+.search-form-submit
+  position: absolute
+  top: 50%
+  right: 10px
+  margin-top: -7px
+  font: 13px font-icon
+  border: none
+  background: none
+  color: #bbb
+  cursor: pointer
+  &:hover, &:focus
+    color: #777
+
+.site-nav
+  background: none repeat scroll 0 0 #fff;
+  border-bottom: 1px solid #eee;
+  display: none;
+  left: 0;
+  padding: 0 1.5rem;
+  position: fixed;
+  text-align: left;
+  top: 48px;
+  width: 100%;
+  z-index: 999;
+  ul
+    list-style: outside none none;
+    margin: 0;
+    padding: 0.5rem 0;
+    li
+      padding: 0.5rem 0;
+      a
+        color: #999;
+        text-decoration: none;
+        transition: color 0.3s ease 0s;

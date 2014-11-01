@@ -1,0 +1,18 @@
+ <ul class="my-socials">
+  <% for (var i in theme.social){
+	if (theme.social[i]){ %>
+  <li>
+  	<a href="<%- theme.social[i] %>" class="<%= i %>" target="_blank">
+  		<i class="fa fa-<%= i %>"></i>
+  	</a>
+  </li>
+  <% } 
+  } %>
+ <% if (config.email) { %>
+ <li>
+   	<a href="mailto:<%- config.email %>" class="email" target="_blank" title="Email Me">
+  		<i class="fa fa-envelope"></i>
+  	</a>
+ </li>
+ <% } %>
+</ul>

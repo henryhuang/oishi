@@ -1,0 +1,43 @@
+# Header
+menu:
+  首页: /
+  归档: /archives
+
+# Content
+excerpt_link: ...
+fancybox: false
+
+# Sidebar
+sidebar: 
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+- links
+
+# Links
+links:
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins: 
+fb_app_id:
+
+# Duoshuo
+duoshuo_shortname: 
+
+# Baidu share
+baidushare: false
+
+# scrollUp 样式
+scrollUp: image
+
+# social
+social:
+  github: https://github.com/henryhuang
+  weibo: http://weibo.com/626242034
