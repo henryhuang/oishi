@@ -1,6 +1,6 @@
 # Oishi
 
-根据landscape-plus主题进行修改。
+根据landscape-plus主题和Writing主题进行修改。
 
 ## 演示
 
