@@ -159,5 +159,16 @@
       }
 
   });
-    
+
+  $(document).keydown(function(e){
+    if (e.keyCode == 37) {
+       $("#article-nav-newer")[0].click();
+       return false;
+    }
+
+    if (e.keyCode == 39) {
+       $("#article-nav-older")[0].click();
+       return false;
+    }
+});
 })(jQuery);
