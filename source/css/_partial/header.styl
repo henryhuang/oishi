@@ -74,7 +74,7 @@
       .weibo
         background-color: #e20021
       .email
-        background-color: #ffd700
+        background-color: #3369e8
       a
         border-radius: 30px;
         color: #fff;
@@ -175,6 +175,11 @@ $nav-link
     padding-left: 10px
     a
       margin: 10px
+  img
+    border-radius: 50%;
+    box-shadow: 0 0 1px #fff;
+    height: 20px;
+    width: 20px;
 
 #sub-nav
   position: absolute
@@ -239,15 +244,15 @@ $nav-link
     color: #777
 
 .site-nav
-  background: none repeat scroll 0 0 #fff;
+  background: none repeat scroll 0 0 #999;
   border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
   display: none;
   left: 0;
   padding: 0 1.5rem;
   position: fixed;
   text-align: left;
   top: 48px;
-  width: 100%;
   z-index: 999;
   ul
     list-style: outside none none;
@@ -256,6 +261,8 @@ $nav-link
     li
       padding: 0.5rem 0;
       a
-        color: #999;
+        color: #fff;
         text-decoration: none;
         transition: color 0.3s ease 0s;
+        &:hover
+          color: #258fb8

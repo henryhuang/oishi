@@ -1,5 +1,7 @@
 # Oishi
 
+> 为什么取名Oishi？因为当时在想名字的时候，旁边有一包上好佳。
+
 根据landscape-plus主题和Writing主题进行修改。
 
 ## 演示

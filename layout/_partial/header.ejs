@@ -23,6 +23,8 @@
     </nav>
     <nav id="title-nav" style="display:none">
       <a href="<%- url_for() %>"><%= config.title %></a>
+      <img src="<%-config.root%>logo.png" alt="Profile Picture">
+      <!--
       <span id="title-nav-socials">
         <% for (var i in theme.social){
         if (theme.social[i]){ %>
@@ -37,6 +39,7 @@
           </a>
        <% } %>
      </span>
+      -->
     </nav>
     <nav id="sub-nav">
       <% if (theme.rss){ %>
