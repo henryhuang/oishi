@@ -59,12 +59,6 @@ google_plus:
 fb_admins: 
 fb_app_id:
 
-# Duoshuo
-duoshuo_shortname: 
-
-# Baidu share
-baidushare: false
-
 # scrollUp 样式
 scrollUp: image
 
@@ -75,3 +69,19 @@ social:
 ```
 
 ## 所有新特性
+
+# 更新日志
+    
+## 201505016
+
+1. 多说插件和百度分享插件的配置使用hexo的config中的，不从theme的配置中读取，开启方法：
+    
+    在hexo的_config.yml中修修改或添加以下配置：
+    
+    ```
+    # Duoshuo
+        duoshuo_shortname: 
+
+    # Baidu share
+        baidushare: true
+    ```
