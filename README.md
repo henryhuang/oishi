@@ -6,7 +6,7 @@
 
 ## 演示
 
-你可以点击[这里](http://www.cnhalo.com/)，查看演示。
+你可以点击[这里](http://henryhuang.github.io/oishi/)，查看演示。
 
 ## 安装
 
@@ -70,9 +70,22 @@ social:
 
 ## 所有新特性
 
-# 更新日志
+# 主要更新日志
+
+## 20160904
+
+1. 社交联系开启方式改从Hexo的config中获取，不从theme的配置中读取，开启方法：
     
-## 201505016
+    在hexo的_config.yml中修修改或添加以下配置：
+    
+    ```
+    # social
+    social:
+      github: YOUR GITHUB URL
+      weibo: YOUR WEIBO HOME PAGE URL
+    ```
+
+## 20150516
 
 1. 多说插件和百度分享插件的配置使用hexo的config中的，不从theme的配置中读取，开启方法：
     

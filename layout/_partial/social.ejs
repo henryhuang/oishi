@@ -1,8 +1,8 @@
  <ul class="my-socials">
-  <% for (var i in theme.social){
-	if (theme.social[i]){ %>
+  <% for (var i in config.social){
+	if (config.social[i]){ %>
   <li>
-  	<a href="<%- theme.social[i] %>" class="<%= i %>" target="_blank">
+  	<a href="<%- config.social[i] %>" class="<%= i %>" target="_blank">
   		<i class="fa fa-<%= i %>"></i>
   	</a>
   </li>
