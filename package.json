@@ -1,6 +1,6 @@
 {
-  "name": "landscape-plus",
-  "version": "0.0.1",
+  "name": "oishi",
+  "version": "1.1.0",
   "private": true,
   "devDependencies": {
     "grunt": "~0.4.2",
