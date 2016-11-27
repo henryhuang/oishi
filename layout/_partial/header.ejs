@@ -16,9 +16,15 @@
     <nav id="main-nav">
       <a id="main-nav-toggle" class="nav-icon"></a>
       <!--
-        <% for (var i in theme.menu){ %>
-          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
-        <% } %>
+        <% if (site.data.menu != undefined) {%>
+          <% for (var i in site.data.menu){ %>
+            <a class="main-nav-link" href="<%- url_for(site.data.menu[i]) %>"><%= i %></a>
+          <% }%>
+        <% } else { %>
+          <% for (var i in theme.menu){ %>
+            <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+          <% }%>
+        <% }%>
       -->
     </nav>
     <nav id="title-nav" style="display:none">
@@ -60,8 +66,16 @@
   </div>
   <div class="site-nav" style="display: none;">
     <ul>
-    <% for (var i in theme.menu){ %>
+      <% if (site.data.menu != undefined) {%>
+
+        <% for (var i in site.data.menu){ %>
+          <li><a href="<%- url_for(site.data.menu[i]) %>"><%= i %></a></li>
+        <% } %>
+
+        <% } else { %>
+      <% for (var i in theme.menu){ %>
         <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+      <% } %>
       <% } %>
     </ul>
   </div>

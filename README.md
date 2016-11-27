@@ -28,73 +28,8 @@ git pull
 
 ## 配置
 
-```yml
-# Header
-menu:
-  首页: /
-  归档: /archives
+[_config.yml](_config.yml)
 
-# Content
-excerpt_link: ...
-fancybox: false
+# 更新日志
 
-# Sidebar
-sidebar: 
-widgets:
-- category
-- tag
-- tagcloud
-- archive
-- recent_posts
-- links
-
-# Links
-links:
-
-# Miscellaneous
-google_analytics:
-favicon: /favicon.png
-twitter:
-google_plus:
-fb_admins: 
-fb_app_id:
-
-# scrollUp 样式
-scrollUp: image
-
-# social
-social:
-  github: https://github.com/github_id
-  weibo: http://weibo.com/weibo_id
-```
-
-## 所有新特性
-
-# 主要更新日志
-
-## 20160904
-
-1. 社交联系开启方式改从Hexo的config中获取，不从theme的配置中读取，开启方法：
-    
-    在hexo的_config.yml中修修改或添加以下配置：
-    
-    ```
-    # social
-    social:
-      github: YOUR GITHUB URL
-      weibo: YOUR WEIBO HOME PAGE URL
-    ```
-
-## 20150516
-
-1. 多说插件和百度分享插件的配置使用hexo的config中的，不从theme的配置中读取，开启方法：
-    
-    在hexo的_config.yml中修修改或添加以下配置：
-    
-    ```
-    # Duoshuo
-        duoshuo_shortname: 
-
-    # Baidu share
-        baidushare: true
-    ```
+see [CHANGELOG](CHANGELOG.md)

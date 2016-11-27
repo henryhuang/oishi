@@ -1,6 +1,17 @@
 <% if (pagination == 2){ %>
   <% page.posts.each(function(post){ %>
+
+    <% if(post.indexhide && (typeof showhide == 'undefined' || !showhide )) {%>
+
+
+    <% } else if(post.indexhide && showhide) {%>
+
+      <%- partial('article', {post: post, index: true}) %>
+
+
+    <% } else {%>
     <%- partial('article', {post: post, index: true}) %>
+    <% } %>
   <% }) %>
   <% if (page.total > 1){ %>
     <nav id="page-nav">
