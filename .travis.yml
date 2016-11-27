@@ -1,0 +1,10 @@
+sudo: false
+language: node_js
+node_js:
+- '6'
+script:
+- gulp build
+branches:
+  only:
+  - master
+  - /^v[0-9]{1,}\.[0-9]{1,}\.[0-9]{1,}$/

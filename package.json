@@ -1,12 +1,12 @@
 {
-  "name": "landscape-plus",
-  "version": "0.0.1",
+  "name": "oishi",
+  "version": "1.1.0",
   "private": true,
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "load-grunt-tasks": "~0.2.0",
-    "grunt-git": "~0.2.2",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.1"
+    "gulp": "^3.9.1"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp build"
   }
 }
