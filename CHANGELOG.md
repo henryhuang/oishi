@@ -7,7 +7,9 @@
 
 	add "categories: life" and "indexhide: true" in post attribute when you create a post
 
-- pt_br.yml
+- pt-BR.yml
+
+  new language, file name according to [http://www.lingoes.net/en/translator/langcode.htm](http://www.lingoes.net/en/translator/langcode.htm).
 
 - 社交联系开启方式改从Hexo的config中获取，不从theme的配置中读取，开启方法：
       
