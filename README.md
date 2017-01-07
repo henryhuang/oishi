@@ -28,7 +28,7 @@ $ git clone https://github.com/henryhuang/oishi.git themes/oishi
 
 ## 启用
 
-修改主题的设置文件`_config.yml`，把`theme`的值设置为`oshi`
+修改主题的设置文件`_config.yml`，把`theme`的值设置为`oishi`
 
 ## 更新
 
